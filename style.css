@@ -25,12 +25,12 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Tamanho reduzido para telas menores */
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ajuste na fonte */
     font-weight: 300;
 }
 
@@ -44,7 +44,7 @@ header p {
     align-items: center;
     padding: 20px;
     margin-top: 30px;
-    transition: transform 0.3s ease-in-out;
+    flex-wrap: wrap; /* Adicionado para se ajustar em telas pequenas */
 }
 
 .profile:hover {
@@ -53,8 +53,8 @@ header p {
 
 .profile-img img {
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 150px; /* Ajustado o tamanho da imagem para telas menores */
+    height: 150px;
     object-fit: cover;
     border: 5px solid #000000;
 }
@@ -65,19 +65,15 @@ header p {
 }
 
 .profile-info h2 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Tamanho reduzido para melhor adaptação */
     color: #000000;
     margin-bottom: 10px;
 }
 
 .profile-info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     line-height: 1.5;
-}
-
-.profile-info strong {
-    color: #333333;
 }
 
 .skills {
@@ -138,4 +134,38 @@ footer a {
 
 footer a:hover {
     color: #cccccc;
+}
+
+/* Media Queries para Tamanhos Menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .profile-img img {
+        margin-bottom: 20px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info {
+        margin-left: 0; /* Remove o espaço lateral em telas pequenas */
+    }
+
+    .profile-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-info p {
+        font-size: 0.9rem;
+    }
+
+    .skills h3 {
+        font-size: 1.5rem;
+    }
 }
