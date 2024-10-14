@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.profile {
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.02);
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #000000;
+}
+
+.profile-info {
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profile-info h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.profile-info strong {
+    color: #333333;
+}
+
+.skills {
+    margin: 40px 0;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.skills h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #000000;
+    border: 1px solid #d9d9d9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #cccccc;
+}
